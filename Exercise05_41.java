@@ -15,18 +15,18 @@ public class Exercise05_41 {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter numbers: ");
-        int max = input.nextInt();             // Assings the first number to max as a base comparison
+        int max = input.nextInt();             // Assigns the first number to max as a base comparison
         int count = 1;                         // Sets up a base count
-        int number;                            // Declaring a varible to test each number
+        int number;                            // Declaring a variable to test each number
 
         // Takes the input of the numbers and stops when you get a 0
         while ((number = input.nextInt()) != 0) {
-            // Tests if the current number is the bigger than the previous largest and if it is assings to max and resets counter
+            // Tests if the current number is the bigger than the previous largest and if it is assigns to max and resets counter
             if (number > max) {
                 max = number;
                 count = 1;
             }
-            // Tests if there is another occurance of the current max number and adds it to the count
+            // Tests if there is another occurrence of the current max number and adds it to the count
             else if (number == max) {
                 count++;
             }
